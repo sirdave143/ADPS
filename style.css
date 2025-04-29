@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #2223;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #ff6600;
+    transform: scale(1.1);
+}
+
+.slider {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+}
+
+.slide {
+    display: none;
+}
+.slide:first-child {
+    display: block;
+}
+
+.logo-img {
+    height: auto; /* Adjust to fit your navigation bar */
+    width: auto;
+}
+
+/* ADPS logo*/
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 60px;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+/* Adjust the photoslider to shady*/
+.shady-effect {
+    position: relative;
+    filter: brightness(80%);
+    transition: filter 0.5s ease-in-out;
+}
+
+.shady-effect:hover {
+    filter: brightness(100%);
+}
+
+/* Intro Section */
+.intro {
+    background: black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.highlight-text span {
+    display: block;
+    background: #ff6600;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 50px;
+    background: #fff;
+}
+
+.about h3 {
+    font-size: 24px;
+    color: #66c;
+}
+
+.about h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #cc5500;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-img {
+        height: 50px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+}
+
+.shady-effect {
+    position: relative;
+    filter: brightness(70%) opacity(0.8);
+    transition: filter 0.5s ease-in-out;
+}
+
+.shady-effect:hover {
+    filter: brightness(100%) opacity(1);
+}
+
+/* about us */
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background Video */
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Text Overlay */
+.hero-content {
+    position: relative;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Light overlay for readability */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #333;
+}
+//sample
+
+.tabs {
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 8px 16px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #eee;
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+.tab-link.active,
+.tab-link:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    //background-color: #111;
+    color: #111;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
